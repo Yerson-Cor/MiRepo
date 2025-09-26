@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Front-End</title>
+  <link rel="stylesheet" href="../css/base.css">
+ <link rel="stylesheet" href="../css/layout.css">
+ <link rel="stylesheet" href="../css/index.css">
+ 
+ <style>
+    /* Estilos para la sección de productos destacados */
+    .productos-destacados {
+        padding: 4rem 0;
+        text-align: center;
+    }
+    .productos-destacados h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+
+    /* Estilos para la cuadrícula de productos */
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Estilos para cada tarjeta de producto */
+    .producto-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .producto-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    
+    .producto-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    
+    .producto-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #0056b3;
+    }
+    
+    .producto-card p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Estilos para el botón de detalles */
+    .btn-detalles {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-detalles:hover {
+        background-color: #0056b3;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar" id="mainNav">
+    <ul>
+      <li><a href="#" id="inicioLink">Inicio</a></li>
+      <li><a href="#" id="contactoLink">Contacto</a></li>
+      <li><a href="#" id="acercaLink">Acerca de</a></li>
+      <li><a href="servicios.html">Servicios</a></li> <!-- Enlace a servicios.html -->
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="inicio" class="seccion activa">
+      <h1>Bienvenido</h1>
+
+
+         <section class="productos-destacados">
+         <h2>Productos Destacados</h2>
+         <div class="productos-grid">
+          <div class="producto-card">
+            <img src="https://imagedelivery.net/0tt38OLkrSmHRt7hdItWEA/00d469e1-bd05-418a-1452-b1a55c274200/public" alt="Laptop Gaming" />
+            <h3>Laptop de Alto Rendimiento</h3>
+            <p>$1.500.000 COP</p>
+            <a href="#" class="btn-detalles">Ver Detalles</a>
+          </div>
+          <div class="producto-card">
+            <img src="https://i.ebayimg.com/thumbs/images/g/sDIAAeSwjcJownLa/s-l1200.jpg" alt="Smartphone Pro" />
+            <h3>Smartphone de Última Generación</h3>
+            <p>$800.000 COP</p>
+            <a href="#" class="btn-detalles">Ver Detalles</a>
+          </div>
+          <div class="producto-card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/24287007/mouse-ergonomico-vertical-inalambrico-24g-recargable-usb.jpg?v=638604580099270000" alt="Teclado Mecánico" />
+            <h3>Mouse Ergonómico</h3>
+            <p>$120.000 COP</p>
+            <a href="#" class="btn-detalles">Ver Detalles</a>
+           </div>
+          </div>
+         </section>
+
+    </section>
+
+    
+
+    <section id="contacto" class="seccion">
+      <h1>Contáctanos</h1>
+      <p>Email: contacto@compupartes.com</p>
+       <div class="info-contacto">
+          <p>📍 **Dirección:** Cra. 10 # 25-34, Bogotá, Colombia</p>
+          <p>📞 **Teléfono:** +57 311 234 5678</p>
+          <p>⏰ **Horario de atención:** Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</p>
+      </div>
+    </section>
+
+    <section id="acerca" class="seccion">
+      <h1>Acerca de Nosotros</h1>
+      <p>En CompuPartes, somos tu destino integral para todo lo relacionado con tecnología en Bogotá. Con años de experiencia, nos especializamos en la venta de equipos electrónicos de última generación, además de ofrecer servicios de mantenimiento expertos y soluciones de alquiler flexibles para empresas y particulares.
+         Nuestra misión es empoderar a nuestros clientes con la tecnología adecuada, garantizando siempre la mejor calidad, servicio y soporte. Creemos en la innovación y en construir relaciones duraderas basadas en la confianza y la excelencia. Visita nuestra tienda física o contáctanos para más información.
+         ¡Gracias por elegir CompuPartes como tu socio tecnológico de confianza!</p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="mainFooter">
+    <p>&copy; 2025 Compupartes. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
